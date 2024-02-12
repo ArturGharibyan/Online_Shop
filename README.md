@@ -1,46 +1,89 @@
-# Getting Started with Create React App
+# Online Shop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Prerequisites
 
-## Available Scripts
+- Node.js
+- npm (Node Package Manager)
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+1. Clone the repository:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    ```bash
+    git clone https://github.com/my-username/online_shop.git
+    ```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. Navigate to the project directory:
 
-### `npm test`
+    ```bash
+    cd online_shop
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend Setup
 
-### `npm run build`
+3. Navigate to the `backend` directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    cd backend
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Install backend dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    npm install
+    ```
 
-### `npm run eject`
+5. Install required npm packages for backend:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    ```bash
+    npm install stripe express cors dotenv
+    ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. To run the backend part, execute the following command in the terminal:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    ```bash
+    npm run devStart
+    ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Frontend (Online Shop) Setup
 
-## Learn More
+7. Navigate back to the root directory of the project:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    cd ..
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+8. Install frontend dependencies:
+
+    ```bash
+    npm install
+    ```
+
+9. Install required npm packages for frontend:
+
+    ```bash
+    npm install --save redux react-redux redux-persist redux-thunk react-image-magnify @mui/material bootstrap react-router-dom axios stripe
+    ```
+
+## Running the Application
+
+10. Start the frontend development server:
+
+    ```bash
+    npm start
+    ```
+
+   The frontend application will be accessible at [http://localhost:3000](http://localhost:3000).
+
+11. Ensure the backend server is running as well to handle API requests.
+
+## Additional Information
+
+Provide any additional information or steps that might be necessary for the user to successfully run your project. This could include setting up environment variables, configuring a database, etc.
+
+## License
+
+This project is licensed under the [Your License Name] License - see the [LICENSE.md](LICENSE.md) file for details.
+
+
+
